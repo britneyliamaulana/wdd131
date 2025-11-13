@@ -1,12 +1,12 @@
 
 // getdates.js
-// ✅ Display current year in footer
+// t0 Display current year in footer
 document.getElementById("currentyear").textContent = new Date().getFullYear();
 
-// ✅ Display last modified date
+//  Display last modified date
 document.getElementById("lastModified").textContent = `Last Modified: ${document.lastModified}`;
 
-// ✅ Hamburger menu toggle
+//  Hamburger menu toggle
 const toggleBtn = document.querySelector('.menu-toggle');
 const navLinks = document.querySelector('.nav-links');
 
