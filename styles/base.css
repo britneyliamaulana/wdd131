@@ -1,0 +1,250 @@
+:root {
+    --primary: #002147;
+    --accent: #f4c430;
+    --light: #f9fafc;
+    --text: #222;
+    --border: #ccc;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: var(--text);
+    background-color: var(--light);
+    margin: 0;
+    line-height: 1.7;
+}
+
+/* HEADER */
+header {
+    background-color: var(--primary);
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+header h1 {
+    margin: 0;
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.6rem;
+}
+
+header .highlight {
+    color: var(--accent);
+}
+
+nav {
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 0.5rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: var(--accent);
+}
+
+/* MAIN */
+main {
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+@media (max-width: 700px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+}
+
+.card img {
+    width: 35%;
+    border-radius: 0px;
+}
+
+.card {
+    background-color: rgb(255, 255, 255);
+    border: 0px solid var(--border);
+    border-radius: 4px;
+    padding: 0rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+}
+
+ul {
+    padding: 29px;
+    margin: 7px;
+    text-decoration: none;
+}
+
+.card h1 {
+    background-color: var(--primary);
+    color: rgb(252, 252, 252);
+    padding: 0.2rem;
+    border-radius: 5px 5px 0 0;
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    margin: 0px;
+}
+
+.container {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.left,
+.right {
+    width: 75%;
+}
+
+/* === ABOUT SECTION IMAGE AND TEXT === */
+.about-content {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.about-text {
+    flex: 1;
+    padding: 4px;
+    color: #000000;
+}
+
+/* Profile image next to intro paragraph */
+.profile-img {
+    float: right;
+    width: 100%;
+    height: auto;
+    margin-left: 1.5rem;
+    border-radius: 4px;
+}
+
+/* Text next to profile image */
+.about-text p {
+    flex: 1;
+}
+
+/* === LOCATION SECTION (Flag + Description) === */
+.location {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+}
+
+
+/* Flag caption styling */
+.location p em {
+    display:block;
+    font-size:0.5px;
+    margin-top: 4.6rem;
+    margin-right: 2.2rem;
+}
+
+.location p {
+    display: block;
+    font-size: 0.9px;
+
+}
+
+/* Heading underline for location */
+.location-title {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 1.5rem;
+    position: relative;
+}
+
+.location-title::after {
+    content: "";
+    display: block;
+    width: 60%;
+    height: 1px;
+    background-color: var(--border);
+    margin: 0.5rem auto 0 auto;
+}
+
+/* === RESPONSIVE LAYOUT === */
+@media (max-width: 700px) {
+
+    .about-content,
+    .location {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .profile-img,
+    .flag-img {
+        width: 80%;
+        max-width: 250px;
+        order: 0;
+    }
+}
+
+.card h2 {
+    text-align: right;
+    margin: 9px;
+    padding: 2px;
+    display: inline-block;
+    border-bottom: 1px solid #000;
+    padding-bottom: 3px;
+}
+
+.flag-img {
+    width: 120px;
+    height: auto;
+    border-radius: 4px;
+    flex-shrink: 0;
+    padding: 4px;
+    float: left;
+}
+
+.card h3 {
+    background-color: var(--primary);
+    color: rgb(252, 252, 252);
+    padding: 1px;
+    border-radius: 5px 5px 0 0;
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+}
+.figure-img {
+    width: 200%;
+}
+
+/* FOOTER */
+footer {
+    background-color: var(--primary);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 0.3rem 0;
+}
+
+footer #lastModified {
+    color: var(--accent);
+}

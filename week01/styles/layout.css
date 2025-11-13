@@ -1,0 +1,80 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set up grid layout on the body */
+body {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "main aside"
+        "footer footer";
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+
+    /* Optional customization */
+    font-family: "Poppins", Arial, sans-serif;
+    background-color: #f855c1;
+}
+
+h1 {
+    padding: 2rem;
+    background-color: #fd77c5;
+    width: 100%;
+}
+
+/* Grid area assignments */
+header {
+    grid-area: header;
+    background-color: #c12a75;
+    color: rgb(255, 252, 254);
+    padding: 0rem;
+}
+
+main {
+    grid-area: main;
+    background-color: rgb(163, 150, 150);
+    padding: 1rem;
+}
+
+aside {
+    grid-area: aside;
+    background-color: #938a8a;
+    padding: 1rem;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #8f1987;
+    color: rgb(252, 118, 243);
+    text-align: center;
+    padding: 4rem;
+}
+
+/* Navigation menu using Flexbox */
+nav ul {
+
+    list-style: none;
+    display: flex;
+    gap: 18rem;
+    margin-top: 1rem;
+    place-items: centre;
+  
+
+}
+
+nav a {
+    color: rgb(246, 246, 246);
+    text-decoration: none;
+    font-weight: lighter;
+    width: 100%;
+    
+}
+
+nav a:hover {
+    text-decoration: underline;
+}

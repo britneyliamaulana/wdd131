@@ -1,0 +1,14 @@
+@media screen and (min-width: 500px) {
+    /* styles for screens 500px and wider go here */
+
+    main {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+
+    figure img {
+        width: 100%;
+        height: auto;
+    }
+}

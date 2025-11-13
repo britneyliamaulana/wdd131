@@ -1,0 +1,17 @@
+/* temples-large.css */
+
+/* Apply Flexbox to nav horizontally */
+nav {
+    flex-direction: row;
+    justify-content: center;
+}
+
+/* Grid layout for temple figures */
+main {
+    max-width: 1000px;
+}
+
+main figure {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    display: grid;
+}

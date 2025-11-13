@@ -1,0 +1,111 @@
+/* Typography and base styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+
+    background-color: #2775b6;
+    color: rgb(255, 255, 255);
+    padding: 1rem 2rem;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 0.1rem;
+    margin-top: 0.5rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+
+    padding: 0.5rem 1rem;
+    border-radius: 1px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #00244d;
+}
+
+/* Base nav styles */
+.nav-links {
+    display: flex;
+    gap: 1rem;
+}
+
+/* Hamburger button hidden by default */
+.menu-toggle {
+    display: none;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: white;
+}    
+/* ✅ Small screen styles */
+ @media screen and (max-width: 700px) {
+    .menu-toggle {
+        display: block;
+}
+    
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 1rem;
+    }
+    
+    .nav-links.show {
+         display: flex;
+    }
+}
+
+
+
+/* Grid layout for temple gallery */
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+/* Individual figure styling */
+figure {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(29, 29, 29, 0.1);
+    text-align: center;
+    margin: 0;
+}
+
+figure img {
+    width: 250px;
+    height: auto;
+    border-radius: 5px;
+}
+
+figcaption {
+    margin-top: 0.5rem;
+    font-weight: bold;
+}
+
+/* Footer styling */
+footer {
+    background-color: #2775b6;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
