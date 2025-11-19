@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City of Paris</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+    
+</head>
+
+<body>
+
+    <div class="page">
+
+        <!-- PAGE TITLE -->
+        <h1 class="title">Paris</h1>
+
+        <!-- HERO IMAGE -->
+        <header class="hero">
+            <picture>
+                <source srcset="images/paris-large.webp" media="(min-width: 768px)">
+                <img src="images/paris-rainy.webp" alt="Beautiful view of Paris on a rainy day">
+            </picture>
+        </header>
+
+        <!-- DATA CARD -->
+        <section class="card data">
+            <h2>Data</h2>
+            <ul>
+                <li><strong>Country:</strong> France</li>
+                <li><strong>Region:</strong> Île-de-France</li>
+                <li><strong>Population:</strong> 2.1 million</li>
+                <li><strong>Founded:</strong> 3rd century BC</li>
+                <li><strong>Landmarks:</strong> Eiffel Tower, Louvre Museum</li>
+                <li><strong>Language:</strong> French</li>
+                <li><strong>Currency:</strong> Euro (€)</li>
+                <li><strong>Time Zone:</strong> UTC+1 / UTC+2 (Summer)</li>
+            </ul>
+        </section>
+        
+        <!-- WEATHER CARD -->
+        <section id="weather" class="card weather">
+            <h2>
+                Weather
+                <span class="weather-icon">
+                    <!-- Mobile SVG icon -->
+                    <img src="images/rainy.svg" alt="Rainy Icon" />
+                    <!-- Emoji for wide screens -->
+                    <span class="weather-emoji">🌧</span>
+                </span>
+            </h2>
+            <ul>
+                <li><strong>Temperature:</strong> <span id="temp">5°C</span></li>
+                <li><strong>Conditions:</strong> <span> Rainy</span></li>
+                <li><strong>Wind Speed:</strong> <span id="wind">20 km/h</span></li>
+                <li><strong>Wind Chill:</strong> <span id="windChill">N/A</span></li>
+            </ul>
+        </section>
+
+        <!-- FOOTER -->
+        <footer>
+            &copy; <span id="currentyear"></span> 💗 Britney Thandeka Maulana | South Africa <br>
+            <span id="lastModified"></span>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>

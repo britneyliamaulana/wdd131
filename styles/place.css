@@ -1,0 +1,193 @@
+/* ---------- GLOBAL ---------- */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #fffeff;
+    color: #0f0e0f;
+}
+
+.page {
+    max-width: 600px;
+    margin: auto;
+    background: rgb(255, 255, 255);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+/* ---------- HERO IMAGE ---------- */
+.hero {
+    border-top: 9px solid #e068ca;
+    /* red border like example */
+}
+
+.hero img {
+    width: 100%;
+    display: block;
+    height: auto;
+}
+
+/* ---------- TITLE ---------- */
+.title {
+    text-align: center;
+    background:#e068ca;
+    padding: 20px 0 10px;
+    margin: 0;
+    font-size: 2rem;
+    color: #fefefe;
+}
+
+/* ---------- CARD BASE ---------- */
+.card {
+    background: white;
+    margin: 20px;
+    padding: 0.3px;
+    border-radius: 1px;
+    border: 2px solid #e068ca;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+
+.card h2 {
+    text-align: center;
+    margin-top: 0;
+}
+
+.card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.card li {
+    padding: 5px 0;
+}
+
+/* WEATHER ICON */
+.weather-icon {
+    font-size: 33px;
+    text-align: center;
+    margin-bottom: 0.2px;
+}
+
+/* ---------- WEATHER ICON ---------- */
+/* Default: Mobile view (SVG visible, emoji hidden) */
+.weather-icon img {
+    display:block;
+    width: 110px;
+    height: auto;
+    padding-left: 89px;
+  
+}
+
+.weather-icon .weather-emoji {
+    display: none;
+}
+
+/* Wide-screen (>=900px): SVG hidden, emoji visible */
+@media (min-width: 900px) {
+    .weather-icon img {
+        display: none;
+    }
+
+    .weather-icon .weather-emoji {
+        display: inline-block;
+        font-size: 2rem;
+        margin-left: 10px;
+        vertical-align: middle;
+    }
+
+    /* Align heading + emoji nicely */
+    .weather h2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* or space-between if you want emoji at right edge */
+        gap: 10px;
+    }
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+    background: #e068ca;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 0.95rem;
+}
+
+/* ============================================================= */
+/*                   WIDE-SCREEN LAYOUT (>= 900px)               */
+/* ============================================================= */
+
+@media (min-width: 900px) {
+
+    /* Remove centered layout */
+    .page {
+        max-width: 100%;
+        background: none;
+        box-shadow: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Turn title into a red header bar */
+    .title {
+        background:#e068ca;
+        color: #fcf9fb;
+        font-size: 2.4rem;
+        padding: 20px;
+        margin: 0;
+    }
+
+    /* Make hero a large banner */
+    .hero {
+        position: relative;
+    }
+
+    .hero img {
+        width: 100%;
+        max-height: 650px;
+        object-fit: cover;
+    }
+
+    /* Make cards overlay on top of the image */
+
+    .data h2,
+    .weather h2 {
+        background:#e068ca;
+        color: white;
+        padding: 10px 0;
+        border-radius: 0px 0px 0 0;
+        margin: -20px -20px 20px -20px;
+            text-align: center;
+    }
+
+    .data,
+    .weather {
+        position: absolute;
+        width: 260px;
+        background: rgba(255, 255, 255, 0.92);
+        border: 2px solid #ffa0f1;
+        backdrop-filter: blur(3px);
+        margin: 0;
+    }
+
+    /* LEFT overlay (Data card) */
+    .data {
+        top: 120px;
+        left: 40px;
+    }
+
+    /* RIGHT overlay (Weather card) */
+    .weather {
+        bottom: 120px;
+        right: 40px;
+    }
+
+    /* Footer for wide-screen */
+    footer {
+        margin-top: -5px;
+        font-size: 1rem;
+        padding: 25px;
+    }
+}
