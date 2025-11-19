@@ -1,3 +1,11 @@
+/*Root*/
+:root{
+    --primary:#fffeff;
+    --accent:#0f0e0f;
+    --text:rgb(255, 255, 255);
+    --border:#e068ca;
+}
+
 /* ---------- GLOBAL ---------- */
 body {
     font-family: Arial, sans-serif;
