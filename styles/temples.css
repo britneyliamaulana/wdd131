@@ -9,7 +9,7 @@ body {
 
 header {
 
-    background-color: #2775b6;
+    background-color: #177dd0;
     color: rgb(255, 255, 255);
     padding: 1rem 2rem;
     align-items: center;
@@ -76,25 +76,29 @@ nav a:hover {
 .container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
-    padding: 1rem;
+    gap:2rem;
+    padding: 93px;
 }
 
 /* Individual figure styling */
 figure {
     background-color: white;
-    padding: 1rem;
+    padding: 2rem;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(29, 29, 29, 0.1);
     text-align: center;
-    margin: 0;
+    margin: 0px;
+    width: 340px;
+    height: auto;
+   
 }
 
 figure img {
-    width: 250px;
+    width: 350px;
     height: auto;
     border-radius: 5px;
-}
+
+}   
 
 figcaption {
     margin-top: 0.5rem;

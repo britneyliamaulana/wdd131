@@ -3,6 +3,10 @@
 /* applying Flexbox to nav horizontally */
 /* temples-large.css */
 @media screen and (min-width: 768px) {
+    h2{
+        margin-left: 16px;
+    }
+
     nav {
         flex-direction: row;
         justify-content: center;
@@ -13,6 +17,9 @@
     }
 
     main figure {
+        padding-left: 14px;
+        margin: 8px;
+        background-color: rgb(246, 250, 249);
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     }

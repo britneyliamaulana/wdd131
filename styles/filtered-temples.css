@@ -1,0 +1,126 @@
+:root {
+    --primary: #177dd0;
+    --accent: #f4f4f4;
+    --boader: rgb(192, 190, 190);
+    --color: #00244d;
+}
+
+/* Base Reset and Typography */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+   
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: var(--primary);
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 1rem;
+    margin: 0 0 1rem 0;
+}
+
+/* Hamburger button hidden by default */
+.menu-toggle {
+    display: none;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: var(--accent);
+}
+
+nav {
+    gap: 0.1rem;
+    margin-top: 0.5rem;
+    justify-content: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--accent);
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: var(--color);
+}
+
+/* Base nav styles */
+.nav-links {
+    display: flex;
+    gap: 1rem;
+}
+
+/* Hamburger button hidden by default */
+.menu-toggle {
+    display: none;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: white;
+}
+
+/*  Small screen styles */
+@media screen and (max-width: 700px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+}
+
+
+/* Temple Cards Grid */
+#temple-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 44px;
+    margin-top: 2rem;
+    padding: 16px;
+    text-align: center;
+}
+
+.temple-card img {
+    display: block;
+    margin: 6px;
+    /* ensures the image stays centered too */
+    width: 100%;
+    height: auto;
+    border-radius: 3px;
+    max-width: 300px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3); /* shadow effect */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 0.9rem;
+    color: var(--accent);
+    background-color: var(--primary);
+}
