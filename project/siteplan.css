@@ -1,0 +1,51 @@
+
+
+/* Color Scheme
+           - Blush Pink: #E7C6C2 (accents, highlights)
+           - Deep Charcoal: #2F2F2F (headings, text emphasis)
+        */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #FFFFFF;
+    color: #2F2F2F;
+    margin: 20px;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #E7C6C2;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+h1,
+h2 {
+    font-family: 'Playfair Display', serif;
+    color: #2F2F2F;
+}
+
+.color-sample {
+    width: 120px;
+    height: 30px;
+    border-radius: 4px;
+    margin-bottom: 5px;
+}
+
+.color1 {
+    background-color: #E7C6C2;
+}
+
+.color2 {
+    background-color: #2F2F2F;
+}
+
+section {
+    margin-top: 40px;
+}
+
+.wireframe img {
+    max-width: 350px;
+    border: 2px solid #E7C6C2;
+    border-radius: 6px;
+}
+
