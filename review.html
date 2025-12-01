@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Submitted</title>
+    <link rel="stylesheet" href="styles/form.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Thank You for Your Review!</h1>
+    </header>
+
+    <main>
+        <p>Your review has been submitted successfully.</p>
+
+        <p id="counter"></p>
+    </main>
+
+    <footer>
+        <p>©2025 Your Name • WDD 131</p>
+    </footer>
+
+    <script>
+        // Get counter or start at 0
+        let count = Number(localStorage.getItem("reviewCount")) || 0;
+
+        // Add one because this page loaded
+        count++;
+
+        // Save back to storage
+        localStorage.setItem("reviewCount", count);
+
+        // Display it
+        document.getElementById("counter").textContent =
+            "Reviews submitted on this device: " + count;
+    </script>
+
+</body>
+
+</html>
