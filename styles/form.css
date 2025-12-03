@@ -69,6 +69,19 @@ fieldset {
     border-radius: 5px;
 }
 
+/* For small devices */
+@media screen and (max-width: 480px) {
+    header h1 {
+        font-size: 1.2rem;
+    }
+
+    input,
+    select,
+    textarea {
+        font-size: 0.9rem;
+    }
+}
+
 footer {
     background-color: var(--primary);
     margin-top: 2rem;
